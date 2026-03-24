@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rise of the Hamlets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- BUTTONS -->
+<div class="buttons">
+    <button class="btn1" onclick="showRandom(0)">Forest Deck</button>
+    <button class="btn2" onclick="showRandom(1)">River Deck</button>
+    <button class="btn3" onclick="showRandom(2)">Mines Deck</button>
+    <button class="btn4" onclick="showRandom(3)">Ricefield Deck</button>
+    <button class="btn5" onclick="showRandom(4)">Bandit Deck</button>
+</div>
+
+<!-- MAIN GAME LAYOUT -->
+<div class="game-container">
+
+    <!-- LEFT: HISTORY PANEL -->
+    <div class="history" id="historyPanel">
+        <h3>History</h3>
+    </div>
+
+    <!-- CENTER: CARD STACK -->
+    <div class="image-container" id="imageContainer"></div>
+
+</div>
+
+<!-- 🔥 PREVIEW OVERLAY -->
+<div id="previewOverlay" class="preview-overlay">
+    <img id="previewImage" class="preview-image">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

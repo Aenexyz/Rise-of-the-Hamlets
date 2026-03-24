@@ -1,0 +1,134 @@
+/* BASE */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: gray;
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* UNDERLINE GLOW */
+.btn1 { box-shadow: 0 5px 0 0 greenyellow; }
+.btn2 { box-shadow: 0 5px 0 0 cyan; }
+.btn3 { box-shadow: 0 5px 0 0 black; }
+.btn4 { box-shadow: 0 5px 0 0 goldenrod; }
+.btn5 { box-shadow: 0 5px 0 0 red; }
+
+/* HOVER GLOW */
+.btn1:hover { box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00; background-color: green; }
+.btn2:hover { box-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff; background-color: blue; }
+.btn3:hover { box-shadow: 0 0 15px #aaaaaa, 0 0 30px #aaaaaa; background-color: gainsboro; color: black; }
+.btn4:hover { box-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00; background-color: goldenrod; }
+.btn5:hover { box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000; background-color: red; }
+
+/* LAYOUT */
+.game-container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+/* HISTORY PANEL */
+.history {
+    width: 250px;
+    background: black;
+    color: white;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: visible;
+}
+
+/* HISTORY IMAGES */
+.history img {
+    width: 60%;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    opacity: 0.8;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+/* 🔥 SINGLE CLEAN HOVER */
+.history img:hover {
+    transform: scale(1.5) translateX(40px);
+    opacity: 1;
+    z-index: 999;
+    box-shadow: 0 10px 25px rgba(255,255,255,0.4);
+}
+
+/* CARD STACK AREA */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* CARDS */
+.card {
+    position: absolute;
+    max-width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    /* merged everything here */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* IMPORTANT: keep JS transform intact */
+.card:hover {
+    transform: scale(1.05) !important;
+}
+
+/* PREVIEW OVERLAY */
+.preview-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.preview-image {
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(255,255,255,0.4);
+    transform: scale(0.8);
+    transition: transform 0.2s ease;
+}
+
+.preview-overlay.active .preview-image {
+    transform: scale(1);
+}
