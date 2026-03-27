@@ -122,27 +122,43 @@ function showRandom(buttonIndex) {
 
     const imgSrc = selectedSet[randomIndex];
 
-    // 🎴 STACK CARD
-    const img = document.createElement("img");
-    img.src = imgSrc;
-    img.classList.add("card");
+    // 🔥 CREATE FLIP CARD
+    const card = document.createElement("div");
+    card.classList.add("card");
 
+    card.innerHTML = `
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="${imgSrc}">
+            </div>
+            <div class="card-back">
+                <img src="images/cardback.jpg">
+            </div>
+        </div>
+    `;
+
+    // 🎴 STACK POSITION
     const positionInStack = stackCount % 10;
     const offsetX = positionInStack * 5;
     const offsetY = positionInStack * 5;
     const rotate = Math.random() * 10 - 5;
 
-    img.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${rotate}deg)`;
-    img.style.zIndex = stackCount;
+    card.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${rotate}deg)`;
+    card.style.zIndex = stackCount;
 
-    container.appendChild(img);
+    // 🔄 FLIP ON CLICK
+    card.addEventListener("click", () => {
+        card.classList.toggle("flipped");
+    });
+
+    container.appendChild(card);
     stackCount++;
 
     if (container.children.length > 10) {
         container.removeChild(container.firstChild);
     }
 
-    // 📜 HISTORY CARD
+    // 📜 HISTORY PANEL (UNCHANGED)
     const historyImg = document.createElement("img");
     historyImg.src = imgSrc;
 
@@ -160,7 +176,6 @@ function showRandom(buttonIndex) {
 
     historyPanel.prepend(historyImg);
 
-    // keep history length (account for title)
     if (historyPanel.children.length > 21) {
         historyPanel.removeChild(historyPanel.lastChild);
     }
@@ -175,4 +190,87 @@ overlay.addEventListener("click", () => {
     setTimeout(() => {
         overlay.style.display = "none";
     }, 200);
+});
+
+// Base Buidling
+const button = document.getElementById("button-base");
+const modal = document.getElementById("image-modal");
+
+button.addEventListener("click", () => {
+  modal.style.display = "flex"; // show the modal
+});
+
+// Close modal when clicking anywhere on the overlay
+modal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// buidling structure 2
+
+const button2 = document.getElementById("button-base2");
+const modal2 = document.getElementById("image-modal2");
+
+button2.addEventListener("click", () => {
+  modal2.style.display = "flex"; // show the modal
+});
+
+// Close modal when clicking anywhere on the overlay
+modal2.addEventListener("click", () => {
+  modal2.style.display = "none";
+});
+
+// barracks Button
+
+const button3 = document.getElementById("button-base3");
+const modal3 = document.getElementById("image-modal3");
+
+button3.addEventListener("click", () => {
+  modal3.style.display = "flex"; // show the modal
+});
+
+// Close modal when clicking anywhere on the overlay
+modal3.addEventListener("click", () => {
+  modal3.style.display = "none";
+});
+
+// Archery Range
+
+const button4 = document.getElementById("button-base4");
+const modal4 = document.getElementById("image-modal4");
+
+button4.addEventListener("click", () => {
+  modal4.style.display = "flex"; // show the modal
+});
+
+// Close modal when clicking anywhere on the overlay
+modal4.addEventListener("click", () => {
+  modal4.style.display = "none";
+});
+
+// Wizard Tower
+
+const button5 = document.getElementById("button-base5");
+const modal5 = document.getElementById("image-modal5");
+
+button5.addEventListener("click", () => {
+  modal5.style.display = "flex"; // show the modal
+});
+
+// Close modal when clicking anywhere on the overlay
+modal5.addEventListener("click", () => {
+  modal5.style.display = "none";
+});
+
+// Blacksmith
+
+const button6 = document.getElementById("button-base6");
+const modal6 = document.getElementById("image-modal6");
+
+button6.addEventListener("click", () => {
+  modal6.style.display = "flex"; // show the modal
+});
+
+// Close modal when clicking anywhere on the overlay
+modal6.addEventListener("click", () => {
+  modal6.style.display = "none";
 });
