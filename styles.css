@@ -1,9 +1,16 @@
 /* BASE */
 html, body {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     height: 100%;
     font-family: Arial;
+    
+    background-repeat: no-repeat; /* no tiling */
+    background: 
+    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.5)),
+    url("images/riseOfTheHamlets.jpg") center/cover no-repeat;
+    background-size: cover;       /* fills screen */
+    background-position: center 50px;  /* keeps it centered */
 }
 
 /* BUTTONS */
@@ -18,31 +25,237 @@ button {
     padding: 20px;
     font-size: 16px;
     cursor: pointer;
-    border: none;
-    background-color: gray;
-    color: white;
+    background-color: lightgray;
+    color: black;
     transition: all 0.3s ease;
     border-radius: 8px;
+    border: black;
+} 
+#button-base {
+    position: relative;       /* stays in place even when scrolling */
+    width: 180px;
+    top: 100px;       
+    right: -95%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    background: lightslategray;
+    box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+    z-index: 999;
+  }
+  #button-base2 {
+    position: relative;       /* stays in place even when scrolling */
+    width: 180px;
+    top: 100px;       
+    right: -95%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    background: lightslategray;
+    box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+    z-index: 999;
+  }
+  #button-base3 {
+    position: relative;       /* stays in place even when scrolling */
+    width: 180px;
+    top: 100px;       
+    right: -95%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    background: lightslategray;
+    box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+    z-index: 999;
+  }
+  #button-base4 {
+    position: relative;       /* stays in place even when scrolling */
+    width: 180px;
+    top: 100px;       
+    right: -95%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    background: lightslategray;
+    box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+    z-index: 999;
+  }
+  #button-base5 {
+    position: relative;       /* stays in place even when scrolling */
+    width: 180px;
+    top: 100px;       
+    right: -95%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    background: lightslategray;
+    box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+    z-index: 999;
+  }
+  #button-base6 {
+    position: relative;       /* stays in place even when scrolling */
+    width: 180px;
+    top: 100px;       
+    right: -95%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    background: lightslategray;
+    box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+    z-index: 999;
+  }
+.button-container {
+    position: absolute;
+    right: 10%;
+    display: block;
+}
+.button-container2 {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    display: block;
 }
 
-button:active {
-    transform: scale(0.95);
+#button-base:hover {
+  transform: scale(0.9); /* move slightly up */
+  box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    15px 25px 35px rgba(0, 0, 0, 0.5); /* bigger shadow */
+}
+#button-base2:hover {
+  transform: scale(0.9); /* move slightly up */
+  box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    15px 25px 35px rgba(0, 0, 0, 0.5); /* bigger shadow */
+}
+#button-base3:hover {
+  transform: scale(0.9); /* move slightly up */
+  box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    15px 25px 35px rgba(0, 0, 0, 0.5); /* bigger shadow */
+}
+#button-base4:hover {
+  transform: scale(0.9); /* move slightly up */
+  box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    15px 25px 35px rgba(0, 0, 0, 0.5); /* bigger shadow */
+}
+#button-base5:hover {
+  transform: scale(0.9); /* move slightly up */
+  box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    15px 25px 35px rgba(0, 0, 0, 0.5); /* bigger shadow */
+}
+#button-base6:hover {
+  transform: scale(0.9); /* move slightly up */
+  box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    15px 25px 35px rgba(0, 0, 0, 0.5); /* bigger shadow */
 }
 
 /* UNDERLINE GLOW */
-.btn1 { box-shadow: 0 5px 0 0 greenyellow; }
-.btn2 { box-shadow: 0 5px 0 0 cyan; }
-.btn3 { box-shadow: 0 5px 0 0 black; }
-.btn4 { box-shadow: 0 5px 0 0 goldenrod; }
-.btn5 { box-shadow: 0 5px 0 0 red; }
+.btn1 { box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    border: 3px solid greenyellow;  }
+.btn2 { border: 3px solid cyan; box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    border: 3px solid cyan; }
+.btn3 { border: 3px solid black; box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    border: 3px solid  gainsboro; }
+.btn4 { border: 3px solid goldenrod; box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    border: 3px solid goldenrod; }
+.btn5 { border: 3px solid red; box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    border: 3px solid  red; }
 
 /* HOVER GLOW */
-.btn1:hover { box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00; background-color: green; }
-.btn2:hover { box-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff; background-color: blue; }
-.btn3:hover { box-shadow: 0 0 15px #aaaaaa, 0 0 30px #aaaaaa; background-color: gainsboro; color: black; }
-.btn4:hover { box-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00; background-color: goldenrod; }
-.btn5:hover { box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000; background-color: red; }
+.btn1:hover { transform: scale(1.03); box-shadow: 0 0 15px #00ff00, 0 0 20px black; background-color: gainsboro; }
+.btn2:hover { transform: scale(1.03); box-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff; background-color: gainsboro; }
+.btn3:hover { transform: scale(1.03); box-shadow: 0 0 15px black, 0 0 30px black; background-color: gainsboro; }
+.btn4:hover { transform: scale(1.03); box-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00; background-color: gainsboro; }
+.btn5:hover { transform: scale(1.03); box-shadow: 0 0 15px red, 0 0 30px lightcoral; background-color: gainsboro; }
 
+/* BUTTON WHEN CLICKED*/
+
+.btn1:active {
+    transform: scale(0.85);
+}
+.btn2:active {
+    transform: scale(0.85);
+}
+.btn3:active {
+    transform: scale(0.85);
+}
+.btn4:active {
+    transform: scale(0.85);
+}
+.btn5:active {
+    transform: scale(0.85);
+}
 /* LAYOUT */
 .game-container {
     display: flex;
@@ -51,9 +264,9 @@ button:active {
 
 /* HISTORY PANEL */
 .history {
-    width: 250px;
-    background: black;
-    color: white;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.2);  
+    color: black;
     padding: 10px;
     overflow-y: auto;
     overflow-x: visible;
@@ -71,8 +284,8 @@ button:active {
 
 /* 🔥 SINGLE CLEAN HOVER */
 .history img:hover {
-    transform: scale(1.5) translateX(40px);
-    opacity: 1;
+    transform: scale(1.4) translateX(40px) translateY(20px);
+    opacity: 100;
     z-index: 999;
     box-shadow: 0 10px 25px rgba(255,255,255,0.4);
 }
@@ -86,24 +299,74 @@ button:active {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding-right: 10%;
+    padding-left: 0;
 }
 
 /* CARDS */
 .card {
     position: absolute;
-    max-width: 400px;
+    width: 350px;
+    height: 500px;
     border-radius: 10px;
     cursor: pointer;
 
-    /* merged everything here */
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    perspective: 1000px; /* needed for 3D flip */
+
+    transition: opacity 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+/* INNER FLIP SYSTEM */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
 
-/* IMPORTANT: keep JS transform intact */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* FLIP TRIGGER */
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* FRONT + BACK */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* FRONT IMAGE */
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* BACK DESIGN */
+.card-back {
+    background: rgba(20, 20, 20, 0.95);
+    color: white;
+
+    transform: rotateY(180deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* IMPORTANT: keep JS transform intact 
 .card:hover {
     transform: scale(1.05) !important;
-}
+} */
 
 /* PREVIEW OVERLAY */
 .preview-overlay {
@@ -112,7 +375,7 @@ button:active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.5);
 
     display: none;
     justify-content: center;
@@ -131,4 +394,191 @@ button:active {
 
 .preview-overlay.active .preview-image {
     transform: scale(1);
+}
+.card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-front,
+.card-back {
+    border: 2px solid black;
+}
+
+/* Modal background */
+#image-modal {
+  display: none;           /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6); /* semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Image inside modal */
+#modal-img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+  animation: popup 0.3s ease;
+}
+
+/* simple pop animation */
+@keyframes popup {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* building structures 2*/
+#image-modal2 {
+  display: none;           /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6); /* semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Image inside modal */
+#modal-img2 {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+  animation: popup 0.3s ease;
+}
+
+/* simple pop animation */
+@keyframes popup {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* Barracks */
+#image-modal3 {
+  display: none;           /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6); /* semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Image inside modal */
+#modal-img3 {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+  animation: popup 0.3s ease;
+}
+
+/* simple pop animation */
+@keyframes popup {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* Image Modal 4 */
+#image-modal4 {
+  display: none;           /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6); /* semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Image inside modal */
+#modal-img4 {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+  animation: popup 0.3s ease;
+}
+
+/* simple pop animation */
+@keyframes popup {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* Image Modal 5 */
+#image-modal5 {
+  display: none;           /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6); /* semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Image inside modal */
+#modal-img5 {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+  animation: popup 0.3s ease;
+}
+
+/* simple pop animation */
+@keyframes popup {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* Image Modal 6 */
+#image-modal6 {
+  display: none;           /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6); /* semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Image inside modal */
+#modal-img6 {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+  animation: popup 0.3s ease;
+}
+
+/* simple pop animation */
+@keyframes popup {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  align-items: flex-start;  /* align left */
+  gap: 30px;
 }
