@@ -14,9 +14,38 @@
     <button class="btn4" onclick="showRandom(3)">Ricefield Deck</button>
     <button class="btn5" onclick="showRandom(4)">Bandit Deck</button>
 </div>
+<!-- BUTTONS to the right side -->
+<div class="button-container">
+    <button class="sideButtons" id="button-base">BASE</button>
+    <button class="sideButtons" id="button-base2">Building Structures</button>
+    <button class="sideButtons" id="button-base3">Combat Buildings</button>
+    <button class="sideButtons" id="button-base4">Adventurers' Guild</button>
+    <button class="sideButtons" id="button-base5">Wizard Tower</button>
+    <button class="sideButtons" id="button-base6">Blacksmith</button>
+</div>
+
+<!-- Modal container -->
+<div id="image-modal">
+  <img id="modal-img" src="images/base card colored.jpg" alt="Popup Image">
+</div>
+<div id="image-modal2">
+  <img id="modal-img2" src="images/Building structure.jpg" alt="Popup Image2">
+</div>
+<div id="image-modal3">
+  <img id="modal-img3" src="images/combatStructures.jpg" alt="Popup Image">
+</div>
+<div id="image-modal4">
+  <img id="modal-img4" src="images/AdventurersGuild.jpg" alt="Popup Image">
+</div>
+<div id="image-modal5">
+  <img id="modal-img5" src="images/WizardTower.jpg" alt="Popup Image">
+</div>
+<div id="image-modal6">
+  <img id="modal-img6" src="images/blacksmith.png" alt="Popup Image">
+</div>
 
 <!-- MAIN GAME LAYOUT -->
-<div class="game-container">
+<div class="game-container">    
 
     <!-- LEFT: HISTORY PANEL -->
     <div class="history" id="historyPanel">
@@ -24,11 +53,13 @@
     </div>
 
     <!-- CENTER: CARD STACK -->
-    <div class="image-container" id="imageContainer"></div>
+    <div class="image-container" id="imageContainer">
+        <!-- JS will inject cards here -->
+    </div>
 
 </div>
 
-<!-- 🔥 PREVIEW OVERLAY -->
+<!-- PREVIEW OVERLAY -->
 <div id="previewOverlay" class="preview-overlay">
     <img id="previewImage" class="preview-image">
 </div>
